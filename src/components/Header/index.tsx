@@ -16,7 +16,7 @@ export function Header(){
                     <li><a onClick={initScrollSuave} className="nav"  href="#home">Home</a></li>
                     <li><a onClick={initScrollSuave}  className="nav"  href="#jogos">Jogos</a></li>
                     <li><a onClick={initScrollSuave} className="nav"  href="#financiadores">Financiadorres</a></li>
-                    <li><Link   href="/Login">Login</Link></li>
+                    <li><Link href="/Login">Login</Link></li>
                 </ul> 
 
 
