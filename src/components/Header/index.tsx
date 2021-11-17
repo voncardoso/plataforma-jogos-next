@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Conatent } from "./style";
 import {initMenuMobile} from "./script";
 import {initScrollSuave} from "./script";
@@ -15,7 +16,7 @@ export function Header(){
                     <li><a onClick={initScrollSuave} className="nav"  href="#home">Home</a></li>
                     <li><a onClick={initScrollSuave}  className="nav"  href="#jogos">Jogos</a></li>
                     <li><a onClick={initScrollSuave} className="nav"  href="#financiadores">Financiadorres</a></li>
-                    <li><a className="buttonLogin"  href="/Login">Login</a></li>
+                    <li><Link   href="/Login">Login</Link></li>
                 </ul> 
 
 
@@ -23,7 +24,7 @@ export function Header(){
                     <li><a onClick={initMenuMobile} className="nav"  href="#home">Home</a></li>
                     <li><a onClick={initMenuMobile}  className="nav"  href="#jogos">Jogos</a></li>
                     <li><a onClick={initMenuMobile} className="nav"  href="#financiadores">Financiadorres</a></li>
-                    <li><a className="buttonLogin"  href="/Login">Login</a></li>
+                    <li><Link   href="/Login">Login</Link></li>
                 </ul> 
                       
         </Conatent> 
