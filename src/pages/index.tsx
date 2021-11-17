@@ -1,10 +1,14 @@
+import Image from 'next/image'
 import { useState } from "react";
-import type { NextPage } from 'next'
 import {Header} from '../components/Header'
 import { Container, Content, Main, Financiadores, Contato, Footer} from "./style";
-import  Modal  from "react-modal"; 
-
-
+import mascote from "../../public/assets/MascoteHome.svg";
+import mascoteQuebracabeça from "../../public/assets/MascoteQuebraCabeça.svg";
+import mascoteRitimo from "../../public/assets/MascoteRitimoMania.svg";
+import Ufpa from "../../public/assets/Ufpa.png"
+import Capes from "../../public/assets/Capes.png"
+import Cnpq from "../../public/assets/Cnpq.png"
+import Fapespa from "../../public/assets/Fapespa.png"
 import {ModalDownload} from '../components/ModalDownload'
 
 
@@ -40,7 +44,7 @@ export default function Home()  {
                         <h1>Jogos Adaptaveis</h1>
                         <p>Desevolvido para gerar relatorios sobre o desenpenho dos jogadores</p>
                     </div>
-                    <img className="Mascote" src="assets/MascoteHome.svg"  alt="Mascote" />
+                    <Image className="Mascote" src={mascote} alt="Mascote" />
                 </Content>
                 <div className="Vector" style={{ backgroundImage: `url(${"assets/Vector.svg"})` }}></div>
 
@@ -49,7 +53,7 @@ export default function Home()  {
                     <div className="ContainerJogos">
                         <h3>Quebra-Cabeça</h3>
                         <div className="QuebraCabeca">
-                            <img src="assets/MascoteQuebraCabeça.svg" alt="" />
+                        <Image  src={mascoteQuebracabeça} alt="Mascote" />
                             
 
                             <ul>
@@ -81,7 +85,7 @@ export default function Home()  {
 
                         <h3 className="h3RitimoMania">Ritimo Mania</h3>
                         <div className="RitmoMania">
-                            <img src="assets/MascoteRitimoMania.svg" alt="" />
+                        <Image  src={mascoteRitimo} alt="Mascote" />
                             
 
                             <ul>
@@ -116,16 +120,16 @@ export default function Home()  {
                     
                     <ul>
                         <li>
-                            <img src="assets/Ufpa.png" alt="" />
+                            <Image src={Ufpa} alt="" />
                         </li>
                         <li>
-                            <img src="/assets/Cnpq.png" alt="" />
+                            <Image src={Cnpq} alt="" />
                         </li>
                         <li>
-                            <img className="Capes" src="assets/Capes.png"  alt="" />
+                            <Image src={Capes} alt="" />
                         </li>
                         <li>
-                            <img src="assets/Fapespa.png" alt="" />
+                            <Image src={Fapespa} alt="" />
                         </li>
                     </ul>
                 </Financiadores>
