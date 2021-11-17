@@ -1,5 +1,7 @@
-
+import Image from 'next/image'
 import { Container} from "./loginStyle";
+import IlustracaoLogin from "../../public/assets/IlustracaoLogin.png"
+
 
 export default function Login() {
     return(
@@ -26,7 +28,7 @@ export default function Login() {
             </div>
 
             <div className="Ilustracao">
-                <img src="assets/IlustracaoLogin.png" alt="" />
+                <Image src={IlustracaoLogin} alt="" />
             </div>                
 
         </Container>
