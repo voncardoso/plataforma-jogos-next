@@ -2,6 +2,9 @@
   "name": "plataforma-jogos",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "14.17.6"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +17,7 @@
     "@swc/core": "^1.2.110",
     "@types/react-modal": "^3.13.1",
     "@types/styled-components": "^5.1.15",
-    "next": "12.0.3",
+    "next": "^12.0.5-canary.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
